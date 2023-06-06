@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./comentarios.css" />
+  </head>
+  <body>
+    <div class="formularioComentarios">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label>
+          <span><i class="icon icon-user-1"></i> Nome:</span>
+          <input type="text" name="nome" required="" />
+        </label>
+
+        <label>
+          <span><i class="icon icon-sobrenome"></i> Sobrenome:</span>
+          <input type="text" name="icon-sobrenome" required="" />
+        </label>
+
+        <label>
+          <span><i class="form-data"></i> Data:</span>
+          <input type="date" name="Data" required="" />
+        </label>
+
+        <label>
+          <span
+            ><i class="icon icon-comment"></i> O que achou do filme? Deixe o seu
+            comentários</span
+          >
+          <textarea name="comentario" rows="3" required=""></textarea>
+        </label>
+
+        <input type="hidden" name="acao" value="enviar" />
+        <button class="enviar" title="Enviar">
+          <p>ENVIAR</p>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+* {
+  background-color: #1b1a1a;
+}
+.formularioContato {
+  max-width: px;
+  height: auto;
+  float: none;
+  margin: auto;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  background-color: #131212;
+  box-shadow: 5px 0px 1.2px 0px #f87204;
+  position: relative;
+}
+.formularioContato label {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.2em;
+}
+.formularioContato label span {
+  width: 100%;
+  float: left;
+  color: #f1f0f0;
+  margin-bottom: 15px;
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+.formularioContato label input {
+  font-size: 1em;
+  color: #fcfcfc;
+  font-family: "kdam Thmor Pro", sans-serif;
+  outline: none;
+  border: 1px #f75d04 solid;
+  border-radius: 10px;
+  padding: 0.6em;
+  transition: 0.1s;
+}
+.formularioContato label select {
+  font-size: 1em;
+  color: #555;
+  border: 1px #f75d04 solid;
+  border-radius: 4px;
+  padding: 0.6em;
+  outline: none;
+  transition: 0.3s;
+}
+.formularioContato label textarea {
+  font-size: 1em;
+  color: #faf8f8;
+  border: 1px #f75d04 solid;
+  border-radius: 4px;
+  padding: 0.6em;
+  outline: none;
+  transition: 0.3s;
+}
+.formularioContato label input:focus {
+  box-shadow: 0 0 5px 0px rgb(231, 193, 178);
+  border: 1px rgb(240, 238, 236) solid;
+  color: rgb(245, 242, 241);
+}
+.formularioContato label select:focus {
+  box-shadow: 0 0 5px 0px rgb(178, 216, 231);
+  border: 1px rgb(238, 110, 6) solid;
+}
+.formularioContato label textarea:focus {
+  box-shadow: 0 0 5px 0px rgb(243, 60, 4);
+  border: 1px rgb(247, 246, 246) solid;
+  color: rgb(250, 248, 248);
+}
+.formularioContato button.enviar {
+  background-color: rgb(243, 60, 4);
+  width: 30%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0;
+  padding: 2em 2;
+  color: #f8f6f6;
+  font-size: 1;
+  font-family: "kdam Thmor Pro", sans-serif;
+  text-align: center;
+  transition: 0.3s;
+}
+.formularioContato button.enviar:hover {
+  background-color: #eceaea;
+}

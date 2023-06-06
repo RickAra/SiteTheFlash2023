@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 70%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  color: rgb(73, 130, 168);
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+  color: red;
+}
+#Logo {
+  width: 150px;
+  height: auto;
+}
+
+#banner {
+  background-image: url("https://musicaecinema.com/wp-content/uploads/2023/04/the-flash-melhor-filme-super-heroi.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#Trailer-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Trailer {
+  width: 50%;
+}
+
+#sinopse {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.description {
+  color: #fff;
+  font-size: 19px;
+  font-family: "kdam Thmor Pro", sans-serif;
+  width: 80%;
+}
+.button {
+  width: 200px;
+  height: 60px;
+  background-color: #d21617;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+.card {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.banner-1 {
+  background-image: url(https://img.tribunahoje.com/xHV96fOBOi9ySXYsbSyPi_VSjS0=/300x300/smart/s3.tribunahoje.com/uploads/imagens/ezra-miller-flash.jpg);
+}
+.banner-2 {
+  background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2023/04/Destaque-Batman-Michael-Keaton.jpg);
+}
+.banner-3 {
+  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdi2v3_W75XigalAnINTNMjJNsjkZrJKgXeZtsXmttv7PCmzuK-aL3peZxq0vBVV1SBclWT58BKtT_EDweZp-gDs4GM4Fc1T9QbBD2SorQp9h1iO1PURX2W3-MOADFq_Fft8DT7xYGkmIveXLcSAwaAVw-MLGU5-KXU8YtLgn0u2mmNVBKkoQtWEJh/s1080/Supergirl%20-%20Filme%20solo%20com%20Sasha%20Calle%20n%C3%A3o%20deve%20mais%20acontecer%20-%20Experi%C3%AAncia%20Nerd.png);
+}
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+span {
+  color: #fff;
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+.footer-navigation {
+  display: none;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  #banner {
+    background-position: 40%;
+  }
+  #trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .trailer {
+    width: 100%;
+  }
+  #sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .description {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+}
